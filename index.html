@@ -1,0 +1,241 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#05091e">
+  <title>Business Savings Org | Save • Grow • Succeed</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <span class="brand-logo">↗<i>▥</i></span>
+      <span class="brand-copy">
+        <b><span>Business</span><br>Savings Org</b>
+        <small>Save · Grow · Succeed</small>
+      </span>
+    </a>
+
+    <button class="mobile-menu" id="mobileMenu">☰</button>
+
+    <nav id="nav">
+      <a class="nav-link active" href="#home">⌂ Home</a>
+      <a class="nav-link" href="#about">● About</a>
+      <a class="nav-link" href="#services">⚙ Services</a>
+      <a class="nav-link" href="#members">♟ Members</a>
+      <a class="nav-link" href="#contributions">▤ Payments</a>
+      <a class="nav-link" href="#admin">♜ Admin</a>
+      <a class="nav-link" href="#contact">✉ Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle">☀ <span>◉</span> ☾</button>
+      <button class="button button-login" id="openAuth">♟ Login</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero page-width" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">👑 WELCOME TO OUR ORGANIZATION</span>
+        <h1>Save Together,<br>Build a <span class="gold-text">Greater Future.</span></h1>
+        <p>
+          Our Business Savings Organization helps members save money
+          together, track payments, set targets and achieve business goals.
+        </p>
+        <div class="hero-actions">
+          <button class="button button-gold" id="joinNow">♟ Join Now</button>
+          <a class="button button-outline" href="#contact">Contact Us</a>
+        </div>
+        <div class="hero-points">
+          <span>✓ Transparent records</span>
+          <span>✓ Admin-approved members</span>
+          <span>✓ Shared goals</span>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="city-glow"></div>
+        <div class="tower tower-one"><i></i></div>
+        <div class="tower tower-two"><i></i></div>
+        <div class="tower tower-three"><i></i></div>
+        <div class="coin-pile pile-one"></div>
+        <div class="coin-pile pile-two"></div>
+        <div class="coin-pile pile-three"></div>
+        <div class="money-bag"><span>$</span><i></i></div>
+        <div class="growth-arrow">➚</div>
+        <div class="art-card"><b>Save<br>Track<br><span>Grow</span> ✓</b></div>
+        <div class="art-platform"></div>
+      </div>
+    </section>
+
+    <section class="features page-width" id="services">
+      <article class="feature-card">
+        <span class="feature-icon blue">♟</span>
+        <div><h3>Member Management</h3><p>Apply and await admin approval.</p></div>
+      </article>
+      <article class="feature-card">
+        <span class="feature-icon cyan">▤</span>
+        <div><h3>Track Payments</h3><p>View approved contributions.</p></div>
+      </article>
+      <article class="feature-card">
+        <span class="feature-icon purple">◎</span>
+        <div><h3>Set Targets</h3><p>Define goals and monitor progress.</p></div>
+      </article>
+      <article class="feature-card">
+        <span class="feature-icon yellow">♜</span>
+        <div><h3>Secure Admin</h3><p>Review members and payments.</p></div>
+      </article>
+    </section>
+
+    <section class="stats-band" id="about">
+      <div class="stats page-width">
+        <article class="stat-card"><span class="stat-icon yellow">♟</span><div><b id="statMembers">0</b><small>Approved Members</small></div></article>
+        <article class="stat-card"><span class="stat-icon yellow">▤</span><div><b id="statTotal">KSh 0</b><small>Total Contributions</small></div></article>
+        <article class="stat-card"><span class="stat-icon cyan">◎</span><div><b id="statTarget">KSh 50,000</b><small>Target Amount</small></div></article>
+        <article class="stat-card"><span class="stat-icon blue">▦</span><div><b id="statToday">0</b><small>Payments Today</small></div></article>
+        <aside class="quote-card">
+          <span>“Together we save,<br><em>together we grow!</em>”</span><b>↗</b>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section page-width" id="members">
+      <div class="section-heading">
+        <div><span class="eyebrow">JOIN OUR COMMUNITY</span><h2>Member <span class="gold-text">directory</span></h2></div>
+        <p>Only approved members appear here.</p>
+      </div>
+      <div class="panel directory-panel">
+        <div class="directory-toolbar">
+          <div><b>Approved members</b><small id="directoryCount">0 members</small></div>
+          <input id="memberSearch" type="search" placeholder="Search approved members…">
+        </div>
+        <div id="memberDirectory" class="member-directory">
+          <div class="empty-state">No approved members yet.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section page-width" id="contributions">
+      <div class="section-heading">
+        <div><span class="eyebrow">TRANSPARENT RECORDS</span><h2>Contributions & <span class="gold-text">payments</span></h2></div>
+        <button class="button button-outline" id="contributeButton">＋ Submit a contribution</button>
+      </div>
+      <div class="panel table-panel">
+        <div class="table-top">
+          <div><b>Approved contribution records</b><small>Payments count after admin approval.</small></div>
+          <span class="pill"><i></i> Live from this browser</span>
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Member</th><th>Amount</th><th>Payment date</th><th>Reference</th><th>Status</th></tr></thead>
+            <tbody id="contributionRows"><tr><td colspan="5" class="empty-state">No approved contributions yet.</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel target-progress">
+        <div><span class="eyebrow">OUR SHARED GOAL</span><h2>Every contribution moves us forward.</h2><p id="progressCaption">KSh 0 saved toward KSh 50,000</p></div>
+        <div class="progress-side">
+          <div class="progress-numbers"><b id="progressPercent">0%</b><small id="progressRemaining">KSh 50,000 remaining</small></div>
+          <div class="progress-track"><span id="progressBar"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section page-width" id="notices">
+      <div class="section-heading"><div><span class="eyebrow">LATEST UPDATES</span><h2>Organization <span class="gold-text">notices</span></h2></div></div>
+      <div id="noticeList" class="notice-list"></div>
+    </section>
+
+    <section class="section page-width contact-section" id="contact">
+      <div class="contact-copy">
+        <span class="eyebrow">LET'S BUILD TOGETHER</span>
+        <h2>Have a question?<br><span class="gold-text">Talk to us.</span></h2>
+        <p>Add your own social media account links in script.js.</p>
+        <div class="social-links">
+          <a class="social whatsapp" href="#" data-social="whatsapp">☎</a>
+          <a class="social facebook" href="#" data-social="facebook">f</a>
+          <a class="social instagram" href="#" data-social="instagram">◎</a>
+          <a class="social youtube" href="#" data-social="youtube">▶</a>
+          <a class="social x-social" href="#" data-social="x">𝕏</a>
+        </div>
+      </div>
+
+      <form class="panel contact-form" id="contactForm">
+        <h3>Send a message</h3>
+        <label>Your name<input name="name" required maxlength="80"></label>
+        <label>Email or phone<input name="contact" required maxlength="100"></label>
+        <label>Message<textarea name="message" required maxlength="500" rows="4"></textarea></label>
+        <button class="button button-gold" type="submit">Prepare message ↗</button>
+        <small id="contactMessage">This demo does not send email.</small>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer" id="admin">
+    <div class="footer-founders">
+      <span class="footer-people">♟</span>
+      <div><small>FOUNDERS</small><b>NICHOLAS OJWANG AND PHAIZARD BRACKSTONE</b></div>
+    </div>
+    <div class="footer-copy">© <span id="year"></span> Business Savings Org. All rights reserved. <b>@nick.studio</b></div>
+    <div class="footer-social">
+      <a href="#" data-social="whatsapp">☎</a>
+      <a href="#" data-social="facebook">f</a>
+      <a href="#" data-social="instagram">◎</a>
+      <a href="#" data-social="youtube">▶</a>
+      <a href="#" data-social="x">𝕏</a>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="authModal" aria-hidden="true">
+    <section class="modal panel" role="dialog" aria-modal="true">
+      <button class="modal-close" id="closeAuth">×</button>
+      <div id="authView">
+        <span class="eyebrow">MEMBER & ADMIN ACCESS</span>
+        <h2 id="authTitle">Welcome <span class="gold-text">back</span></h2>
+        <p id="authIntro">Log in or create a new member account.</p>
+        <div class="auth-switch">
+          <button class="auth-tab active" data-auth-mode="login">Login</button>
+          <button class="auth-tab" data-auth-mode="register">Create new account</button>
+          <button class="auth-tab" data-auth-mode="admin">Admin setup/login</button>
+        </div>
+        <form id="authForm">
+          <div id="authFields"></div>
+          <button class="button button-gold full" id="authSubmit" type="submit">Login ↗</button>
+          <p class="form-message" id="authMessage" role="status"></p>
+        </form>
+        <small class="warning-note">Prototype only: do not use real passwords or financial data until a secure backend is installed.</small>
+      </div>
+      <div id="accountView" class="hidden"></div>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="contributionModal" aria-hidden="true">
+    <section class="modal panel" role="dialog" aria-modal="true">
+      <button class="modal-close" id="closeContribution">×</button>
+      <span class="eyebrow">MEMBER CONTRIBUTION</span>
+      <h2 id="contributeTitle">Submit a <span class="gold-text">payment</span></h2>
+      <p>Submissions require admin review before they count toward totals.</p>
+      <form id="contributionForm">
+        <label>Amount (KSh)<input type="number" name="amount" min="1" step="0.01" required></label>
+        <label>Payment date<input type="date" name="date" required></label>
+        <label>Payment reference / M-Pesa code<input name="reference" maxlength="80" required></label>
+        <label>Additional note<textarea name="note" rows="2" maxlength="240"></textarea></label>
+        <button class="button button-gold full">Submit for approval</button>
+        <p class="form-message" id="contributionMessage" role="status"></p>
+      </form>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
